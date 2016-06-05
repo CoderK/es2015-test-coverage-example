@@ -2,7 +2,7 @@
 
 module.exports = function (config) {
     let browsers = ['Chrome'];
-    let preprocessors = ['webpack'];
+    let preprocessors = ['webpack', 'sourcemap'];
     let reporters = ['mocha'];
     let webpack = {
         devtool: 'inline-source-map',
@@ -23,7 +23,7 @@ module.exports = function (config) {
     if (config.coverage) {
         browsers = ['PhantomJS'];
         reporters = ['mocha', 'coverage'];
-        preprocessors = ['webpack', 'sourcemap'];
+        preprocessors = ['webpack'];
         webpack.isparta = {
             embedSource: true,
             noAutoWrap: true,
