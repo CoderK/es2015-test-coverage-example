@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>Title</title>
+	<script src="./node_modules/unsplash-js/dist/unsplash.min.js"></script>
 </head>
 <body>
-$END$
+
+<script>
+	const unsplash = new Unsplash.default({
+		applicationId: "17a375b451a077cc4c16e853130147ea58bfad4a290b55466e31432115fd0831",
+		secret: "64f2e2b3fd4359330121428b9186fafd64ff56131b1516ce1ce5f2380e8cb030",
+		callbackUrl: "urn:ietf:wg:oauth:2.0:oob",
+		bearerToken: '535b3ba534c9f1ebc8b4312e9388e3edb9a271d6cdf7d8fd7bc956d73291a865'
+	});
+
+	const authenticationUrl = unsplash.auth.getAuthenticationUrl([
+		"public",
+		"read_user",
+		"write_user",
+		"read_photos",
+		"write_photos"
+	]);
+
+	location.assign(authenticationUrl);
+</script>
+
 </body>
 </html>

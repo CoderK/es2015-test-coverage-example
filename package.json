@@ -34,9 +34,13 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
+    "lerna": "^2.11.0",
     "mocha": "^2.5.3",
     "phantomjs-prebuilt": "^2.1.7",
     "rimraf": "^2.5.2",
     "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "unsplash-js": "^4.2.0"
   }
 }
