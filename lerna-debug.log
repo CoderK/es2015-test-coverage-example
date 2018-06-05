@@ -1,0 +1,64 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /Users/Naver/Workspace/coderk/unsplash-demo
+3 info version 2.11.0
+4 silly existsSync /Users/Naver/Workspace/coderk/unsplash-demo/VERSION
+5 info versioning independent
+6 silly initialize attempt
+7 silly npmConfig { registry: undefined,
+7 silly npmConfig   npmClient: 'yarn',
+7 silly npmConfig   npmClientArgs: undefined,
+7 silly npmConfig   mutex: 'network:42424' }
+8 silly initialize success
+9 silly execute attempt
+10 info Bootstrapping 2 packages
+11 info lifecycle preinstall
+12 silly runScript preinstall @coderk/test
+13 silly @coderk/test
+14 silly runScript preinstall @coderk/test2
+15 silly @coderk/test2
+16 silly hasDependencyInstalled @coderk/test @coderk/test2
+17 silly dependencyIsSatisfied [ '@coderk/test2',
+17 silly dependencyIsSatisfied   '2.0.3',
+17 silly dependencyIsSatisfied   '/Users/Naver/Workspace/coderk/unsplash-demo/packages/test/node_modules' ]
+18 verbose dependencyIsSatisfied @coderk/test2 false
+19 silly root dependencies []
+20 silly leaf dependencies {
+20 silly leaf dependencies   "@coderk/test": [
+20 silly leaf dependencies     {
+20 silly leaf dependencies       "dependency": "@coderk/test2@2.0.3",
+20 silly leaf dependencies       "isSatisfied": false
+20 silly leaf dependencies     }
+20 silly leaf dependencies   ]
+20 silly leaf dependencies }
+21 info Installing external dependencies
+22 verbose actions 1 actions, concurrency 4
+23 silly installInDir test [ '@coderk/test2@2.0.3' ]
+24 silly installInDir backup /Users/Naver/Workspace/coderk/unsplash-demo/packages/test/package.json
+25 silly rename [ '/Users/Naver/Workspace/coderk/unsplash-demo/packages/test/package.json',
+25 silly rename   '/Users/Naver/Workspace/coderk/unsplash-demo/packages/test/package.json.lerna_backup' ]
+26 silly installInDir writing tempJson { dependencies: { '@coderk/test2': '2.0.3' } }
+27 silly getExecOpts { cwd: '/Users/Naver/Workspace/coderk/unsplash-demo/packages/test' }
+28 silly installInDir [ 'yarn',
+28 silly installInDir   [ 'install', '--mutex', 'network:42424', '--non-interactive' ] ]
+29 silly installInDir cleanup /Users/Naver/Workspace/coderk/unsplash-demo/packages/test/package.json
+30 silly renameSync [ '/Users/Naver/Workspace/coderk/unsplash-demo/packages/test/package.json.lerna_backup',
+30 silly renameSync   '/Users/Naver/Workspace/coderk/unsplash-demo/packages/test/package.json' ]
+31 verbose installed leaf @coderk/test
+32 error execute callback with error
+33 error Error: Command failed: yarn install --mutex network:42424 --non-interactive
+33 error warning package.json: No license field
+33 error warning ../../../package.json: No license field
+33 error warning No license field
+33 error error An unexpected error occurred: "https://npm.navercorp.com/@coderk%2ftest2: no such package available".
+33 error yarn install v1.7.0
+33 error info No lockfile found.
+33 error [1/4] Resolving packages...
+33 error info If you think this is a bug, please open a bug report with the information provided in "/Users/Naver/Workspace/coderk/unsplash-demo/packages/test/yarn-error.log".
+33 error info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+33 error
+33 error     at Promise.all.then.arr (/Users/Naver/Workspace/coderk/unsplash-demo/node_modules/execa/index.js:236:11)
+33 error     at <anonymous>
