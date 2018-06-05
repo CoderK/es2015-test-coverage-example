@@ -1,1 +1,1 @@
-console.log("2.0.0으로 올리자");
+console.log("2.0.2");
