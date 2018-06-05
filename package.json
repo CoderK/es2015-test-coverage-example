@@ -1,7 +1,7 @@
 {
-  "name": "es2015-test-coverage-example",
+  "name": "lerna-publish-test",
   "version": "1.0.0",
-  "description": "Example for tracking test coverage with es2015",
+  "description": "Sorry, this is just package for test.",
   "scripts": {
     "test": "node ./node_modules/.bin/karma start",
     "coverage": "node ./node_modules/.bin/rimraf ./coverage && node ./node_modules/.bin/karma start --coverage",
