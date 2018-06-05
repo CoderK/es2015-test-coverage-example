@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "test2": "^1.0.0"
+    "@coderk/test2": "2.0.1"
   }
 }
