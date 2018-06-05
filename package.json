@@ -5,7 +5,8 @@
   "scripts": {
     "test": "node ./node_modules/.bin/karma start",
     "coverage": "node ./node_modules/.bin/rimraf ./coverage && node ./node_modules/.bin/karma start --coverage",
-    "build": "node ./node_modules/.bin/webpack --progress"
+    "build": "node ./node_modules/.bin/webpack --progress",
+    "deploy": "lerna publish --skip-npm"
   },
   "author": {
     "name": "KimcCoding",

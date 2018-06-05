@@ -1,0 +1,82 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /Users/Naver/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:131036:13)
+      at emitNone (events.js:106:13)
+      at Interface.emit (events.js:208:7)
+      at Interface._ttyWrite (readline.js:775:16)
+      at ReadStream.onkeypress (readline.js:160:10)
+      at emitTwo (events.js:126:13)
+      at ReadStream.emit (events.js:214:7)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1011:36)
+
+npm manifest: 
+  {
+    "name": "es2015-test-coverage-example",
+    "version": "1.0.0",
+    "description": "Example for tracking test coverage with es2015",
+    "scripts": {
+      "test": "node ./node_modules/.bin/karma start",
+      "coverage": "node ./node_modules/.bin/rimraf ./coverage && node ./node_modules/.bin/karma start --coverage",
+      "build": "node ./node_modules/.bin/webpack --progress",
+      "publish": "lerna publish --skip-npm"
+    },
+    "author": {
+      "name": "KimcCoding",
+      "email": "jeokrang@gmail.com",
+      "url": "http://huns.me"
+    },
+    "keywords": [
+      "es2015",
+      "test",
+      "isparta",
+      "karma"
+    ],
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.9.1",
+      "babel-loader": "^6.2.4",
+      "babel-preset-es2015": "^6.9.0",
+      "chai": "^3.5.0",
+      "isparta-loader": "^2.0.0",
+      "karma": "^0.13.22",
+      "karma-chai": "^0.1.0",
+      "karma-chrome-launcher": "^1.0.1",
+      "karma-coverage": "^1.0.0",
+      "karma-mocha": "^1.0.1",
+      "karma-mocha-reporter": "^2.0.3",
+      "karma-phantomjs-launcher": "^1.0.0",
+      "karma-sourcemap-loader": "^0.3.7",
+      "karma-webpack": "^1.7.0",
+      "lerna": "^2.11.0",
+      "mocha": "^2.5.3",
+      "phantomjs-prebuilt": "^2.1.7",
+      "rimraf": "^2.5.2",
+      "webpack": "^1.13.1"
+    },
+    "dependencies": {
+      "unsplash-js": "^4.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
